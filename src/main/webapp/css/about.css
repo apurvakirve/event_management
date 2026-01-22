@@ -1,0 +1,10 @@
+/* Combined user uploaded aboutE.css with small adjustments */
+#abc{margin-left:20px;margin-top:10px;max-width:100%;height:auto;border-radius:10px;}
+.vid_info .container-fluid #abc{animation: head_textanim 1s ease;}
+@keyframes head_textanim{0%{transform:translateX(-60px);opacity:0;}100%{transform:translateX(0);opacity:1;}}
+.vid_info .container-fluid #head_text{animation: paratext_anim 1s ease;}
+@keyframes paratext_anim{0%{transform:translateX(60px);opacity:0;}100%{transform:translateX(0);opacity:1;}}
+.embed-responsive-item-1{width:200px;height:100px;}
+/* additional about styles */
+.mission h1{color:#6b21a8;}
+.vid_info p,#head_text{color:#333;line-height:1.6;font-size:16px;}

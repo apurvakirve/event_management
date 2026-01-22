@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EventSphere - Register</title>
+  <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <nav class="navbar">
+    <h1>EventSphere</h1>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="register.html" class="active">Register</a>
+      <a href="about.html">About</a>
+       <a href="about.html">About</a>
+    </div>
+  </nav>
+
+  <!-- ===== Registration Section ===== -->
+  <section class="register-section">
+    <div class="form-box">
+      <h2>Book for an Event</h2>
+      <p class="subtitle">Plan your event with style ✨</p>
+
+      <!-- Form submitting to JSP backend -->
+      <form action="bookevent" method="post">
+        <div class="form-row">
+          <div class="col">
+            <label>Full Name</label>
+            <input type="text" name="name" placeholder="Enter your name" required>
+          </div>
+          <div class="col">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Enter your email" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="col">
+            <label>Phone</label>
+            <input type="tel" name="phone" placeholder="Enter your phone" required>
+          </div>
+          <div class="col">
+            <label>Date</label>
+            <input type="date" name="event_date" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="col">
+            <label>Event Type</label>
+            <select name="event_type" required>
+              <option value="">Select Event Type</option>
+              <option>Wedding</option>
+              <option>Baby Shower</option>
+              <option>Birthday</option>
+              <option>Engagement</option>
+              <option>Anniversary</option>
+              <option>Naming Ceremony</option>
+              <option>Haladi Ceremony</option>
+              <option>Business Startups</option>
+              <option>Sangeet Ceremony</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="submit" class="btn">Submit Registration</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <p>© 2025 EventSphere • Designed with 💜</p>
+  </footer>
+
+</body>
+</html>
